@@ -1,12 +1,9 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyByContact : MonoBehaviour
+public class ShieldByContact : MonoBehaviour
 {
-	public GameObject explosions;
-	public GameObject playerExplosions;
-	public int scoreValue;
 	private GameController gameController;
 
 	void Start ()
@@ -28,22 +25,21 @@ public class DestroyByContact : MonoBehaviour
 		{
 			return;
 		}
-		Instantiate (explosions, transform.position, transform.rotation);
 		if (other.tag == "Player") 
 		{
-			Instantiate (playerExplosions, other.transform.position, other.transform.rotation);
-			gameController.GameOver ();
+			
 		}
-		gameController.AddScore (scoreValue);
 		Destroy (other.gameObject);
 		Destroy (gameObject);
-	}
 
-	/*void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.tag == "Player") 
+
+
+		if (other.tag == "Player") 
 		{
-			Physics.IgnoreCollision (PlayerPrefs.collider, collider);
+			Destroy (gameObject);
+
 		}
-	}*/
-}
+
+
+	}
+}*/
